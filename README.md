@@ -1,30 +1,19 @@
 CS526 Homework 5
-Boston University Metropolitan College
-
-HOW TO RUN
-
-Extract CS526_HW5.zip. Open PowerShell or a terminal in the extracted
-CS526_HW5 folder, where bst.py and the inputs folder are located.
-Python 3 is required. No extra packages are needed. If your system uses
-python3 instead of python, replace python with python3 in the commands.
 
 Problem 1
-python bst.py 2
-
-The optional seed 2 reproduces the screenshot. Use python bst.py for a
-fresh randomized run.
+Use python Problem 1.py for a fresh randomized run.
 
 Problem 2 (paste as one line)
-python vowel_combinations.py inputs/vowel_input1.txt inputs/vowel_input2.txt inputs/vowel_input3.txt inputs/vowel_input4.txt
+python Problem 2.py inputs/vowel_input1.txt inputs/vowel_input2.txt inputs/vowel_input3.txt inputs/vowel_input4.txt
 
 Problem 3 (paste as one line)
-python longest_sequence.py inputs/longest_seq1.txt inputs/longest_seq2.txt inputs/longest_seq3.txt inputs/longest_seq4.txt inputs/longest_seq5.txt inputs/longest_seq6.txt
+python Problem 3.py inputs/longest_seq1.txt inputs/longest_seq2.txt inputs/longest_seq3.txt inputs/longest_seq4.txt inputs/longest_seq5.txt inputs/longest_seq6.txt
 
 For Problems 2 and 3, you can also pass a single input file. The
-screenshots folder shows one run for each problem.
+screenshots show one run for each problem.
 
-PROBLEM 1 - BINARY SEARCH TREE
 
+PROBLEM 1
 Node stores a value and references to its left and right children.
 BST stores the root. AddNode and FindNode follow the left branch for
 smaller values and the right branch for larger ones. The tree stores
@@ -44,8 +33,8 @@ and chooses one present value and one absent value for the searches.
 Add, delete, and find each take O(h) time for tree height h. PrintTree
 visits all n nodes and indents each line by its node's depth.
 
-PROBLEM 2 - MORSE VOWEL COMBINATIONS
 
+PROBLEM 2
 I used bottom-up dynamic programming from Lecture 6 Part 2. ways[i]
 counts the ways to decode the first i symbols using only vowels.
 ways[0] = 1 because the empty prefix has one decoding. For each i,
@@ -55,10 +44,8 @@ decoding has exactly one last letter, so this counts every valid
 decoding once. The answer is ways[n], where n is the input length.
 The algorithm uses O(n) steps and O(n) table entries.
 
-Expected counts for files 1 through 4 are 6, 8, 0, and 193050000.
 
-PROBLEM 3 - LONGEST ALTERNATING INCREASING SEQUENCE
-
+PROBLEM 3
 I used two bottom-up DP arrays. length_a[i] is the longest valid
 sequence that ends at A[i]. length_b[i] is defined the same way for
 B[i]. Both start at 1 because each element can start a sequence.
