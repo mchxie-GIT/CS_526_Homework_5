@@ -1,5 +1,3 @@
-"""Problem 1: Binary search tree and a randomized demonstration."""
-
 import random
 import sys
 
