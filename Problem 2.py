@@ -1,5 +1,3 @@
-"""Problem 2: Count vowel-only Morse code decodings."""
-
 import sys
 from pathlib import Path
 
