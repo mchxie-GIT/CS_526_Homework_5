@@ -1,5 +1,3 @@
-"""Problem 3: Find a longest alternating increasing sequence."""
-
 import sys
 from pathlib import Path
 
